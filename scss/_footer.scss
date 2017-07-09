@@ -7,10 +7,37 @@
 
 footer {
     width: 100%;
-    vertical-align: top;
-    background-color: $space-background;
-    background-image: url("/images/svg/star1300-900.svg");
-    background-size: cover;
+    height: 40vh;
+    background-color: $forest;
+    /* 上⇒下への白から黄色のグラデーション指定 */
+    background-image: linear-gradient(5deg, $forest 50%, #fff 50%, #fff);
+    .pikuforest {
+        position: relative;
+        width: 100%;
+        height: 40vh;
+        max-width: 1280px;
+        margin: auto;
+    }
+    .piyo {
+        position: absolute;
+        bottom: 15vh;
+        right: 100px;
+        width: 11vw;
+        min-width: 120px;
+        max-width: 140px;
+        height: auto;
+        content: url('/images/svg/pikupiyo.svg');
+    }
+    .trees {
+        position: absolute;
+        bottom: 18vh;
+        left: 50px;
+        width: 35vw;
+        min-width: 300px;
+        max-width: 450px;
+        height: auto;
+        content: url('/images/svg/morinoki3.svg');
+    }
     .snsicons {
         color: white;
         font-size: 3rem;
@@ -22,7 +49,7 @@ footer {
             a {
                 color: white;
                 &:hover {
-                    color: $space-green;
+                    color: -green;
                 }
             }
         }
