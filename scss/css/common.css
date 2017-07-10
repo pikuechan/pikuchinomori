@@ -1102,13 +1102,6 @@ mark {
 u {
   text-decoration: none; }
 
-/***********************************************************
-                      SECTION BORDER
-***********************************************************/
-body {
-  width: 100%;
-  height: 100vh; }
-
 /***************************************************************
                   pikuchi no mori Color Settings
 ****************************************************************/
@@ -1139,117 +1132,14 @@ body {
 /***********************************************************
                            HEADER
 ***********************************************************/
-.header__construct {
-  height: 30vh;
-  width: 100%;
-  background-color: #8aafe8; }
-  .header__construct nav {
-    z-index: 100;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    padding: 8px 0;
-    background-color: #8aafe8;
-    opacity: 0.85;
-    vertical-align: center;
-    color: white;
-    font-size: 1.0rem; }
-    .header__construct nav ol {
-      text-align: center; }
-      .header__construct nav ol li {
-        display: inline-block; }
-        .header__construct nav ol li a {
-          display: inline-block;
-          padding: 6px 30px;
-          color: white; }
-          .header__construct nav ol li a:hover {
-            color: white;
-            background-color: #251d00;
-            border-radius: 15px; }
-    .header__construct nav .navmenu {
-      display: none; }
-  @media (max-width: 960px) {
-    .header__construct nav {
-      padding: 0;
-      height: auto; }
-      .header__construct nav .navmenu {
-        display: block;
-        font-size: 2.5rem;
-        float: right;
-        padding: 2px 5px 0 0;
-        cursor: pointer; }
-      .header__construct nav .navmenu_list {
-        display: none; }
-      .header__construct nav.nav-open {
-        opacity: 0.9;
-        background-color: #251d00; }
-        .header__construct nav.nav-open .navmenu_list {
-          display: block;
-          text-align: left;
-          padding: 15px 0; }
-          .header__construct nav.nav-open .navmenu_list li {
-            display: block;
-            line-height: 2.5rem;
-            text-align: center;
-            margin: 0 10vw;
-            border-bottom: 2px solid;
-            border-color: rgba(255, 255, 255, 0.3); }
-            .header__construct nav.nav-open .navmenu_list li:last-child {
-              border-bottom: none; }
-            .header__construct nav.nav-open .navmenu_list li:hover {
-              color: #CFED47;
-              border-radius: 0px;
-              background-color: #584600; }
-            .header__construct nav.nav-open .navmenu_list li a {
-              display: block; }
-              .header__construct nav.nav-open .navmenu_list li a:hover {
-                background-color: #584600; }
-    .header__construct h1 {
-      font-size: 2.5rem; } }
-  @media (max-width: 480px) {
-    .header__construct h1 {
-      font-size: 2.0rem; } }
-
-/***************************************************************
-                  pikuchi no mori Color Settings
-****************************************************************/
-/***************************************************************
-                          Color Settings
-****************************************************************/
-/*宇宙背景ver. カラーリング*/
-/*地球背景ver. カラーリング*/
-/***************************************************************
-                          Size Settings
-****************************************************************/
-/***********************************************************
-                         MIXIN
-***********************************************************/
-/***********************************************************
-                       SECTION BASE AREA
-***********************************************************/
-/***********************************************************
-                       SECTION TITLE　
-***********************************************************/
-/***********************************************************
-                       SENTENCE STYLE　
-***********************************************************/
-/* xlarge */
-/* large */
-/* basic */
-/* small */
-/***********************************************************
-                           HEADER
-***********************************************************/
-.header__top {
+.header--top {
   height: 30vh;
   width: 100%;
   background-color: #8aafe8;
   background-image: -webkit-linear-gradient(87deg, #fff 30%, #8aafe8 30%, #8aafe8);
   background-image: -o-linear-gradient(87deg, #fff 30%, #8aafe8 30%, #8aafe8);
   background-image: linear-gradient(3deg, #fff 30%, #8aafe8 30%, #8aafe8); }
-  .header__top nav {
+  .header--top nav {
     z-index: 100;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -1262,68 +1152,68 @@ body {
     vertical-align: center;
     color: white;
     font-size: 1.0rem; }
-    .header__top nav ol {
+    .header--top nav ol {
       text-align: center; }
-      .header__top nav ol li {
+      .header--top nav ol li {
         display: inline-block; }
-        .header__top nav ol li a {
+        .header--top nav ol li a {
           display: inline-block;
           padding: 6px 30px;
           color: white; }
-          .header__top nav ol li a:hover {
+          .header--top nav ol li a:hover {
             color: white;
             background-color: #251d00;
             border-radius: 15px; }
-    .header__top nav .navmenu {
+    .header--top nav .navmenu {
       display: none; }
   @media (max-width: 960px) {
-    .header__top nav {
+    .header--top nav {
       padding: 0;
       height: auto; }
-      .header__top nav .navmenu {
+      .header--top nav .navmenu {
         display: block;
         font-size: 2.5rem;
         float: right;
         padding: 2px 5px 0 0;
         cursor: pointer; }
-      .header__top nav .navmenu_list {
+      .header--top nav .navmenu_list {
         display: none; }
-      .header__top nav.nav-open {
+      .header--top nav.nav-open {
         opacity: 0.9;
         background-color: #251d00; }
-        .header__top nav.nav-open .navmenu_list {
+        .header--top nav.nav-open .navmenu_list {
           display: block;
           text-align: left;
           padding: 15px 0; }
-          .header__top nav.nav-open .navmenu_list li {
+          .header--top nav.nav-open .navmenu_list li {
             display: block;
             line-height: 2.5rem;
             text-align: center;
             margin: 0 10vw;
             border-bottom: 2px solid;
             border-color: rgba(255, 255, 255, 0.3); }
-            .header__top nav.nav-open .navmenu_list li:last-child {
+            .header--top nav.nav-open .navmenu_list li:last-child {
               border-bottom: none; }
-            .header__top nav.nav-open .navmenu_list li:hover {
+            .header--top nav.nav-open .navmenu_list li:hover {
               color: #CFED47;
               border-radius: 0px;
               background-color: #584600; }
-            .header__top nav.nav-open .navmenu_list li a {
+            .header--top nav.nav-open .navmenu_list li a {
               display: block; }
-              .header__top nav.nav-open .navmenu_list li a:hover {
+              .header--top nav.nav-open .navmenu_list li a:hover {
                 background-color: #584600; }
-    .header__top h1 {
+    .header--top h1 {
       font-size: 2.5rem; } }
   @media (max-width: 480px) {
-    .header__top h1 {
+    .header--top h1 {
       font-size: 2.0rem; } }
 
 /***********************************************************
                            MAIN
 ***********************************************************/
-.main__top {
+.main--top {
   height: 30vh; }
-  .main__top .sitetitle {
+  .main--top .sitetitle {
     width: 100%;
     height: 100%;
     margin-top: 0vh;
@@ -1334,7 +1224,7 @@ body {
 /***********************************************************
                            FOOTER
 ***********************************************************/
-.footer__top {
+.footer--top {
   width: 100%;
   height: 40vh;
   background-color: #ffdd58;
@@ -1342,13 +1232,13 @@ body {
   background-image: -webkit-linear-gradient(85deg, #ffdd58 50%, #fff 50%, #fff);
   background-image: -o-linear-gradient(85deg, #ffdd58 50%, #fff 50%, #fff);
   background-image: linear-gradient(5deg, #ffdd58 50%, #fff 50%, #fff); }
-  .footer__top .pikuforest {
+  .footer--top .pikuforest {
     position: relative;
     width: 100%;
     height: 40vh;
     max-width: 1280px;
     margin: auto; }
-  .footer__top .piyo {
+  .footer--top .piyo {
     position: absolute;
     bottom: 15vh;
     right: 100px;
@@ -1357,7 +1247,7 @@ body {
     max-width: 140px;
     height: auto;
     content: url("/images/svg/pikupiyo.svg"); }
-  .footer__top .trees {
+  .footer--top .trees {
     position: absolute;
     bottom: 18vh;
     left: 50px;
@@ -1366,19 +1256,19 @@ body {
     max-width: 450px;
     height: auto;
     content: url("/images/svg/morinoki3.svg"); }
-  .footer__top .snsicons {
+  .footer--top .snsicons {
     color: white;
     font-size: 3rem;
     padding-top: 20px;
     text-align: center; }
-    .footer__top .snsicons li {
+    .footer--top .snsicons li {
       display: inline-block;
       padding: 0 5px; }
-      .footer__top .snsicons li a {
+      .footer--top .snsicons li a {
         color: white; }
-        .footer__top .snsicons li a:hover {
+        .footer--top .snsicons li a:hover {
           color: -green; }
-  .footer__top .copyright {
+  .footer--top .copyright {
     width: 100%;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -1389,11 +1279,197 @@ body {
     letter-spacing: 0.15rem;
     font-size: 0.8rem; }
   @media (max-width: 960px) {
-    .footer__top .snsicons {
+    .footer--top .snsicons {
       font-size: 2.6rem; } }
   @media (max-width: 480px) {
-    .footer__top .snsicons {
+    .footer--top .snsicons {
       font-size: 2.4rem; }
-    .footer__top .copyright {
+    .footer--top .copyright {
       font-size: 0.6rem;
       padding: 25px 0; } }
+
+/***************************************************************
+                  pikuchi no mori Color Settings
+****************************************************************/
+/***************************************************************
+                          Color Settings
+****************************************************************/
+/*宇宙背景ver. カラーリング*/
+/*地球背景ver. カラーリング*/
+/***************************************************************
+                          Size Settings
+****************************************************************/
+/***********************************************************
+                         MIXIN
+***********************************************************/
+/***********************************************************
+                       SECTION BASE AREA
+***********************************************************/
+/***********************************************************
+                       SECTION TITLE　
+***********************************************************/
+/***********************************************************
+                       SENTENCE STYLE　
+***********************************************************/
+/* xlarge */
+/* large */
+/* basic */
+/* small */
+/***********************************************************
+                           HEADER
+***********************************************************/
+.construction {
+  background-color: #8aafe8; }
+
+/***********************************************************
+                           HEADER
+***********************************************************/
+.header--construct {
+  height: 10vh;
+  width: 100%;
+  background-color: #8aafe8; }
+  .header--construct nav {
+    z-index: 100;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    padding: 8px 0;
+    background-color: #8aafe8;
+    opacity: 0.85;
+    vertical-align: center;
+    color: white;
+    font-size: 1.0rem; }
+    .header--construct nav ol {
+      text-align: center; }
+      .header--construct nav ol li {
+        display: inline-block; }
+        .header--construct nav ol li a {
+          display: inline-block;
+          padding: 6px 30px;
+          color: white;
+          opacity: 1; }
+          .header--construct nav ol li a:hover {
+            color: white;
+            background-color: #251d00;
+            border-radius: 15px; }
+    .header--construct nav .navmenu {
+      display: none; }
+  @media (max-width: 960px) {
+    .header--construct nav {
+      padding: 0;
+      height: auto; }
+      .header--construct nav .navmenu {
+        display: block;
+        font-size: 2.5rem;
+        float: right;
+        padding: 2px 5px 0 0;
+        cursor: pointer; }
+      .header--construct nav .navmenu_list {
+        display: none; }
+      .header--construct nav.nav-open {
+        opacity: 0.9;
+        background-color: #251d00; }
+        .header--construct nav.nav-open .navmenu_list {
+          display: block;
+          text-align: left;
+          padding: 15px 0; }
+          .header--construct nav.nav-open .navmenu_list li {
+            display: block;
+            line-height: 2.5rem;
+            text-align: center;
+            margin: 0 10vw;
+            border-bottom: 2px solid;
+            border-color: rgba(255, 255, 255, 0.3); }
+            .header--construct nav.nav-open .navmenu_list li:last-child {
+              border-bottom: none; }
+            .header--construct nav.nav-open .navmenu_list li:hover {
+              color: #CFED47;
+              border-radius: 0px;
+              background-color: #584600; }
+            .header--construct nav.nav-open .navmenu_list li a {
+              display: block; }
+              .header--construct nav.nav-open .navmenu_list li a:hover {
+                background-color: #584600; }
+    .header--construct h1 {
+      font-size: 2.5rem; } }
+  @media (max-width: 480px) {
+    .header--construct h1 {
+      font-size: 2.0rem; } }
+
+/***********************************************************
+                           MAIN
+***********************************************************/
+.main--construct {
+  height: 90vh;
+  width: 100%;
+  background-color: #8aafe8;
+  vertical-align: middle; }
+
+.piyobox__title {
+  text-align: center;
+  color: #dfe9f9;
+  padding: 5vh 0 60px;
+  font-size: 2rem;
+  letter-spacing: 0.2rem; }
+
+.piyobox__button {
+  display: block;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 150px;
+  padding: 10px 15px;
+  margin: 50px auto;
+  text-align: center;
+  box-sizing: border-box;
+  font-size: 1.5rem;
+  letter-spacing: 0.3rem;
+  background-color: white;
+  color: #8aafe8;
+  opacity: 0.8;
+  border-radius: 20px; }
+  .piyobox__button:before {
+    font-family: "pikufont";
+    content: "\e90d";
+    font-size: 1.5rem;
+    vertical-align: top;
+    padding: 0 5px; }
+  .piyobox__button:hover {
+    opacity: 0.4; }
+
+.piyobox {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-top: 40px;
+  margin: auto;
+  width: 380px;
+  height: 380px;
+  max-width: 500px;
+  max-height: 500px;
+  background-color: white;
+  border-radius: 100%;
+  border: 1px solid white; }
+  .piyobox .piyobox__text {
+    display: block;
+    height: 50px;
+    text-align: center;
+    margin: 0 auto;
+    color: #8aafe8;
+    font-size: 1.9rem;
+    letter-spacing: 0.3rem; }
+  .piyobox .piyobox__img--cry {
+    width: 250px;
+    height: 250px;
+    margin: auto;
+    background-image: url("/images/svg/pikupiyo_sorry.svg");
+    background-repeat: no-repeat;
+    background-size: contain; }
+
+/***********************************************************
+                           FOOTER
+***********************************************************/
+.footer--construct {
+  width: 100%;
+  height: 0vh;
+  background-color: #8aafe8; }

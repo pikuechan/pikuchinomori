@@ -5,7 +5,7 @@
                            HEADER
 ***********************************************************/
 
-.header__top {
+.header--top {
     height: 30vh;
     width: 100%;
     background-color: $sky;
@@ -108,7 +108,7 @@
                            MAIN
 ***********************************************************/
 
-.main__top {
+.main--top {
     $titlemargin: 0vh;
     height: 30vh - $titlemargin;
     .sitetitle {
@@ -126,7 +126,7 @@
                            FOOTER
 ***********************************************************/
 
-.footer__top {
+.footer--top {
     width: 100%;
     height: 40vh;
     background-color: $forest;

@@ -29,11 +29,14 @@
 /***********************************************************
                            HEADER
 ***********************************************************/
-.header__construct {
+.header--top {
   height: 30vh;
   width: 100%;
-  background-color: #8aafe8; }
-  .header__construct nav {
+  background-color: #8aafe8;
+  background-image: -webkit-linear-gradient(87deg, #fff 30%, #8aafe8 30%, #8aafe8);
+  background-image: -o-linear-gradient(87deg, #fff 30%, #8aafe8 30%, #8aafe8);
+  background-image: linear-gradient(3deg, #fff 30%, #8aafe8 30%, #8aafe8); }
+  .header--top nav {
     z-index: 100;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -46,74 +49,79 @@
     vertical-align: center;
     color: white;
     font-size: 1.0rem; }
-    .header__construct nav ol {
+    .header--top nav ol {
       text-align: center; }
-      .header__construct nav ol li {
+      .header--top nav ol li {
         display: inline-block; }
-        .header__construct nav ol li a {
+        .header--top nav ol li a {
           display: inline-block;
           padding: 6px 30px;
           color: white; }
-          .header__construct nav ol li a:hover {
+          .header--top nav ol li a:hover {
             color: white;
             background-color: #251d00;
             border-radius: 15px; }
-    .header__construct nav .navmenu {
+    .header--top nav .navmenu {
       display: none; }
   @media (max-width: 960px) {
-    .header__construct nav {
+    .header--top nav {
       padding: 0;
       height: auto; }
-      .header__construct nav .navmenu {
+      .header--top nav .navmenu {
         display: block;
         font-size: 2.5rem;
         float: right;
         padding: 2px 5px 0 0;
         cursor: pointer; }
-      .header__construct nav .navmenu_list {
+      .header--top nav .navmenu_list {
         display: none; }
-      .header__construct nav.nav-open {
+      .header--top nav.nav-open {
         opacity: 0.9;
         background-color: #251d00; }
-        .header__construct nav.nav-open .navmenu_list {
+        .header--top nav.nav-open .navmenu_list {
           display: block;
           text-align: left;
           padding: 15px 0; }
-          .header__construct nav.nav-open .navmenu_list li {
+          .header--top nav.nav-open .navmenu_list li {
             display: block;
             line-height: 2.5rem;
             text-align: center;
             margin: 0 10vw;
             border-bottom: 2px solid;
             border-color: rgba(255, 255, 255, 0.3); }
-            .header__construct nav.nav-open .navmenu_list li:last-child {
+            .header--top nav.nav-open .navmenu_list li:last-child {
               border-bottom: none; }
-            .header__construct nav.nav-open .navmenu_list li:hover {
+            .header--top nav.nav-open .navmenu_list li:hover {
               color: #CFED47;
               border-radius: 0px;
               background-color: #584600; }
-            .header__construct nav.nav-open .navmenu_list li a {
+            .header--top nav.nav-open .navmenu_list li a {
               display: block; }
-              .header__construct nav.nav-open .navmenu_list li a:hover {
+              .header--top nav.nav-open .navmenu_list li a:hover {
                 background-color: #584600; }
-    .header__construct h1 {
+    .header--top h1 {
       font-size: 2.5rem; } }
   @media (max-width: 480px) {
-    .header__construct h1 {
+    .header--top h1 {
       font-size: 2.0rem; } }
 
 /***********************************************************
                            MAIN
 ***********************************************************/
-.main__construct {
-  height: 20vh;
-  width: 100%;
-  background-color: #8aafe8; }
+.main--top {
+  height: 30vh; }
+  .main--top .sitetitle {
+    width: 100%;
+    height: 100%;
+    margin-top: 0vh;
+    background-position: center;
+    background-image: url("/images/svg/pikuchinomori_logo.svg");
+    background-repeat: no-repeat; }
 
 /***********************************************************
                            FOOTER
 ***********************************************************/
-.footer__construct {
+.footer--top {
   width: 100%;
   height: 40vh;
   background-color: #ffdd58;
@@ -121,13 +129,13 @@
   background-image: -webkit-linear-gradient(85deg, #ffdd58 50%, #fff 50%, #fff);
   background-image: -o-linear-gradient(85deg, #ffdd58 50%, #fff 50%, #fff);
   background-image: linear-gradient(5deg, #ffdd58 50%, #fff 50%, #fff); }
-  .footer__construct .pikuforest {
+  .footer--top .pikuforest {
     position: relative;
     width: 100%;
     height: 40vh;
     max-width: 1280px;
     margin: auto; }
-  .footer__construct .piyo {
+  .footer--top .piyo {
     position: absolute;
     bottom: 15vh;
     right: 100px;
@@ -136,7 +144,7 @@
     max-width: 140px;
     height: auto;
     content: url("/images/svg/pikupiyo.svg"); }
-  .footer__construct .trees {
+  .footer--top .trees {
     position: absolute;
     bottom: 18vh;
     left: 50px;
@@ -145,19 +153,19 @@
     max-width: 450px;
     height: auto;
     content: url("/images/svg/morinoki3.svg"); }
-  .footer__construct .snsicons {
+  .footer--top .snsicons {
     color: white;
     font-size: 3rem;
     padding-top: 20px;
     text-align: center; }
-    .footer__construct .snsicons li {
+    .footer--top .snsicons li {
       display: inline-block;
       padding: 0 5px; }
-      .footer__construct .snsicons li a {
+      .footer--top .snsicons li a {
         color: white; }
-        .footer__construct .snsicons li a:hover {
+        .footer--top .snsicons li a:hover {
           color: -green; }
-  .footer__construct .copyright {
+  .footer--top .copyright {
     width: 100%;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -168,11 +176,11 @@
     letter-spacing: 0.15rem;
     font-size: 0.8rem; }
   @media (max-width: 960px) {
-    .footer__construct .snsicons {
+    .footer--top .snsicons {
       font-size: 2.6rem; } }
   @media (max-width: 480px) {
-    .footer__construct .snsicons {
+    .footer--top .snsicons {
       font-size: 2.4rem; }
-    .footer__construct .copyright {
+    .footer--top .copyright {
       font-size: 0.6rem;
       padding: 25px 0; } }
