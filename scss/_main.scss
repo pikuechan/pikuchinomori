@@ -74,16 +74,3 @@ body {
     width: 100%;
     height: 100vh;
 }
-
-main {
-    $titlemargin: 0vh;
-    height: 30vh - $titlemargin;
-    .sitetitle {
-        width: 100%;
-        height: 100%;
-        margin-top: $titlemargin;
-        background-position: center;
-        background-image: url('/images/svg/pikuchinomori_logo.svg');
-        background-repeat: no-repeat;
-    }
-}

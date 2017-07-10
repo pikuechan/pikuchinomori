@@ -102,3 +102,102 @@
         }
     }
 }
+
+
+/***********************************************************
+                           MAIN
+***********************************************************/
+
+.main__top {
+    $titlemargin: 0vh;
+    height: 30vh - $titlemargin;
+    .sitetitle {
+        width: 100%;
+        height: 100%;
+        margin-top: $titlemargin;
+        background-position: center;
+        background-image: url('/images/svg/pikuchinomori_logo.svg');
+        background-repeat: no-repeat;
+    }
+}
+
+
+/***********************************************************
+                           FOOTER
+***********************************************************/
+
+.footer__top {
+    width: 100%;
+    height: 40vh;
+    background-color: $forest;
+    /* 上⇒下への白から黄色のグラデーション指定 */
+    background-image: linear-gradient(5deg, $forest 50%, #fff 50%, #fff);
+    .pikuforest {
+        position: relative;
+        width: 100%;
+        height: 40vh;
+        max-width: 1280px;
+        margin: auto;
+    }
+    .piyo {
+        position: absolute;
+        bottom: 15vh;
+        right: 100px;
+        width: 11vw;
+        min-width: 120px;
+        max-width: 140px;
+        height: auto;
+        content: url('/images/svg/pikupiyo.svg');
+    }
+    .trees {
+        position: absolute;
+        bottom: 18vh;
+        left: 50px;
+        width: 35vw;
+        min-width: 300px;
+        max-width: 450px;
+        height: auto;
+        content: url('/images/svg/morinoki3.svg');
+    }
+    .snsicons {
+        color: white;
+        font-size: 3rem;
+        padding-top: 20px;
+        text-align: center;
+        li {
+            display: inline-block;
+            padding: 0 5px;
+            a {
+                color: white;
+                &:hover {
+                    color: -green;
+                }
+            }
+        }
+    }
+    .copyright {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 30px 0;
+        text-align: center;
+        vertical-align: bottom;
+        color: rgba(#fff, 0.7);
+        letter-spacing: 0.15rem;
+        font-size: 0.8rem;
+    }
+    //タブレット版
+    @media (max-width:960px) {
+        .snsicons {
+            font-size: 2.6rem;
+        }
+    }
+    @media (max-width: 480px) {
+        .snsicons {
+            font-size: 2.4rem;
+        }
+        .copyright {
+            font-size: 0.6rem;
+            padding: 25px 0;
+        }
+    }
+}

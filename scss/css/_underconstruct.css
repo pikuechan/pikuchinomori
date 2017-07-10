@@ -1,0 +1,179 @@
+@charset "UTF-8";
+/***************************************************************
+                  pikuchi no mori Color Settings
+****************************************************************/
+/***************************************************************
+                          Color Settings
+****************************************************************/
+/*宇宙背景ver. カラーリング*/
+/*地球背景ver. カラーリング*/
+/***************************************************************
+                          Size Settings
+****************************************************************/
+/***********************************************************
+                         MIXIN
+***********************************************************/
+/***********************************************************
+                       SECTION BASE AREA
+***********************************************************/
+/***********************************************************
+                       SECTION TITLE　
+***********************************************************/
+/***********************************************************
+                       SENTENCE STYLE　
+***********************************************************/
+/* xlarge */
+/* large */
+/* basic */
+/* small */
+/***********************************************************
+                           HEADER
+***********************************************************/
+.header__construct {
+  height: 30vh;
+  width: 100%;
+  background-color: #8aafe8; }
+  .header__construct nav {
+    z-index: 100;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    padding: 8px 0;
+    background-color: #8aafe8;
+    opacity: 0.85;
+    vertical-align: center;
+    color: white;
+    font-size: 1.0rem; }
+    .header__construct nav ol {
+      text-align: center; }
+      .header__construct nav ol li {
+        display: inline-block; }
+        .header__construct nav ol li a {
+          display: inline-block;
+          padding: 6px 30px;
+          color: white; }
+          .header__construct nav ol li a:hover {
+            color: white;
+            background-color: #251d00;
+            border-radius: 15px; }
+    .header__construct nav .navmenu {
+      display: none; }
+  @media (max-width: 960px) {
+    .header__construct nav {
+      padding: 0;
+      height: auto; }
+      .header__construct nav .navmenu {
+        display: block;
+        font-size: 2.5rem;
+        float: right;
+        padding: 2px 5px 0 0;
+        cursor: pointer; }
+      .header__construct nav .navmenu_list {
+        display: none; }
+      .header__construct nav.nav-open {
+        opacity: 0.9;
+        background-color: #251d00; }
+        .header__construct nav.nav-open .navmenu_list {
+          display: block;
+          text-align: left;
+          padding: 15px 0; }
+          .header__construct nav.nav-open .navmenu_list li {
+            display: block;
+            line-height: 2.5rem;
+            text-align: center;
+            margin: 0 10vw;
+            border-bottom: 2px solid;
+            border-color: rgba(255, 255, 255, 0.3); }
+            .header__construct nav.nav-open .navmenu_list li:last-child {
+              border-bottom: none; }
+            .header__construct nav.nav-open .navmenu_list li:hover {
+              color: #CFED47;
+              border-radius: 0px;
+              background-color: #584600; }
+            .header__construct nav.nav-open .navmenu_list li a {
+              display: block; }
+              .header__construct nav.nav-open .navmenu_list li a:hover {
+                background-color: #584600; }
+    .header__construct h1 {
+      font-size: 2.5rem; } }
+  @media (max-width: 480px) {
+    .header__construct h1 {
+      font-size: 2.0rem; } }
+
+/***********************************************************
+                           MAIN
+***********************************************************/
+.main__construct {
+  display: block;
+  height: 50vh;
+  width: 100%;
+  background-color: #8aafe8; }
+
+/***********************************************************
+                           FOOTER
+***********************************************************/
+.footer__construct {
+  width: 100%;
+  height: 40vh;
+  background-color: #ffdd58;
+  /* 上⇒下への白から黄色のグラデーション指定 */
+  background-image: -webkit-linear-gradient(85deg, #ffdd58 50%, #fff 50%, #fff);
+  background-image: -o-linear-gradient(85deg, #ffdd58 50%, #fff 50%, #fff);
+  background-image: linear-gradient(5deg, #ffdd58 50%, #fff 50%, #fff); }
+  .footer__construct .pikuforest {
+    position: relative;
+    width: 100%;
+    height: 40vh;
+    max-width: 1280px;
+    margin: auto; }
+  .footer__construct .piyo {
+    position: absolute;
+    bottom: 15vh;
+    right: 100px;
+    width: 11vw;
+    min-width: 120px;
+    max-width: 140px;
+    height: auto;
+    content: url("/images/svg/pikupiyo.svg"); }
+  .footer__construct .trees {
+    position: absolute;
+    bottom: 18vh;
+    left: 50px;
+    width: 35vw;
+    min-width: 300px;
+    max-width: 450px;
+    height: auto;
+    content: url("/images/svg/morinoki3.svg"); }
+  .footer__construct .snsicons {
+    color: white;
+    font-size: 3rem;
+    padding-top: 20px;
+    text-align: center; }
+    .footer__construct .snsicons li {
+      display: inline-block;
+      padding: 0 5px; }
+      .footer__construct .snsicons li a {
+        color: white; }
+        .footer__construct .snsicons li a:hover {
+          color: -green; }
+  .footer__construct .copyright {
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 30px 0;
+    text-align: center;
+    vertical-align: bottom;
+    color: rgba(255, 255, 255, 0.7);
+    letter-spacing: 0.15rem;
+    font-size: 0.8rem; }
+  @media (max-width: 960px) {
+    .footer__construct .snsicons {
+      font-size: 2.6rem; } }
+  @media (max-width: 480px) {
+    .footer__construct .snsicons {
+      font-size: 2.4rem; }
+    .footer__construct .copyright {
+      font-size: 0.6rem;
+      padding: 25px 0; } }
