@@ -1130,15 +1130,17 @@ u {
 /* basic */
 /* small */
 /***********************************************************
+                           BODY
+***********************************************************/
+.toppage {
+  background-color: #8aafe8; }
+
+/***********************************************************
                            HEADER
 ***********************************************************/
 .header--top {
-  height: 30vh;
-  width: 100%;
-  background-color: #8aafe8;
-  background-image: -webkit-linear-gradient(87deg, #fff 30%, #8aafe8 30%, #8aafe8);
-  background-image: -o-linear-gradient(87deg, #fff 30%, #8aafe8 30%, #8aafe8);
-  background-image: linear-gradient(3deg, #fff 30%, #8aafe8 30%, #8aafe8); }
+  height: 20vh;
+  width: 100%; }
   .header--top nav {
     z-index: 100;
     -webkit-box-sizing: border-box;
@@ -1212,13 +1214,13 @@ u {
                            MAIN
 ***********************************************************/
 .main--top {
-  height: 30vh; }
+  height: 40vh; }
   .main--top .sitetitle {
     width: 100%;
     height: 100%;
     margin-top: 0vh;
     background-position: center;
-    background-image: url("/images/svg/pikuchinomori_logo.svg");
+    background-image: url("/images/svg/pikuchinomori_logo2.svg");
     background-repeat: no-repeat; }
 
 /***********************************************************
@@ -1229,9 +1231,9 @@ u {
   height: 40vh;
   background-color: #ffdd58;
   /* 上⇒下への白から黄色のグラデーション指定 */
-  background-image: -webkit-linear-gradient(85deg, #ffdd58 50%, #fff 50%, #fff);
-  background-image: -o-linear-gradient(85deg, #ffdd58 50%, #fff 50%, #fff);
-  background-image: linear-gradient(5deg, #ffdd58 50%, #fff 50%, #fff); }
+  background-image: -webkit-linear-gradient(85deg, #ffdd58 50%, #8aafe8 50%, #8aafe8);
+  background-image: -o-linear-gradient(85deg, #ffdd58 50%, #8aafe8 50%, #8aafe8);
+  background-image: linear-gradient(5deg, #ffdd58 50%, #8aafe8 50%, #8aafe8); }
   .footer--top .pikuforest {
     position: relative;
     width: 100%;
@@ -1246,7 +1248,59 @@ u {
     min-width: 120px;
     max-width: 140px;
     height: auto;
-    content: url("/images/svg/pikupiyo.svg"); }
+    content: url("/images/svg/pikupiyo.svg");
+    -webkit-animation-name: piyojump;
+    animation-name: piyojump;
+    -webkit-animation-duration: 2500ms;
+    animation-duration: 2500ms;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: normal;
+    animation-direction: normal; }
+
+@-webkit-keyframes piyojump {
+  0% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px); }
+  5% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px); }
+  20% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px); }
+  30% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px); }
+  50% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px); }
+  100% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px); } }
+
+@keyframes piyojump {
+  0% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px); }
+  5% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px); }
+  20% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px); }
+  30% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px); }
+  50% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px); }
+  100% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px); } }
   .footer--top .trees {
     position: absolute;
     bottom: 18vh;
@@ -1256,28 +1310,17 @@ u {
     max-width: 450px;
     height: auto;
     content: url("/images/svg/morinoki3.svg"); }
-  .footer--top .snsicons {
-    color: white;
-    font-size: 3rem;
-    padding-top: 20px;
-    text-align: center; }
-    .footer--top .snsicons li {
-      display: inline-block;
-      padding: 0 5px; }
-      .footer--top .snsicons li a {
-        color: white; }
-        .footer--top .snsicons li a:hover {
-          color: -green; }
   .footer--top .copyright {
+    background-color: #ffdd58;
     width: 100%;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    padding: 30px 0;
+    padding: 10px 10px;
     text-align: center;
     vertical-align: bottom;
-    color: rgba(255, 255, 255, 0.7);
+    color: white;
     letter-spacing: 0.15rem;
-    font-size: 0.8rem; }
+    font-size: 1rem; }
   @media (max-width: 960px) {
     .footer--top .snsicons {
       font-size: 2.6rem; } }
@@ -1316,7 +1359,7 @@ u {
 /* basic */
 /* small */
 /***********************************************************
-                           HEADER
+                           BODY
 ***********************************************************/
 .construction {
   background-color: #8aafe8; }
@@ -1465,7 +1508,95 @@ u {
     margin: auto;
     background-image: url("/images/svg/pikupiyo_sorry.svg");
     background-repeat: no-repeat;
-    background-size: contain; }
+    background-size: contain;
+    -webkit-animation-name: piyobulu;
+    animation-name: piyobulu;
+    -webkit-animation-duration: 3000ms;
+    animation-duration: 3000ms;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: normal;
+    animation-direction: normal; }
+
+@-webkit-keyframes piyobulu {
+  0% {
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px); }
+  3% {
+    -webkit-transform: translateX(4px);
+    transform: translateX(4px); }
+  6% {
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px); }
+  9% {
+    -webkit-transform: translateX(-4px);
+    transform: translateX(-4px); }
+  12% {
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px); }
+  15% {
+    -webkit-transform: translateX(4px);
+    transform: translateX(4px); }
+  18% {
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px); }
+  21% {
+    -webkit-transform: translateX(-2px);
+    transform: translateX(-2px); }
+  24% {
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px); }
+  27% {
+    -webkit-transform: translateX(2px);
+    transform: translateX(2px); }
+  30% {
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px); }
+  100% {
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px); } }
+
+@keyframes piyobulu {
+  0% {
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px); }
+  3% {
+    -webkit-transform: translateX(4px);
+    transform: translateX(4px); }
+  6% {
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px); }
+  9% {
+    -webkit-transform: translateX(-4px);
+    transform: translateX(-4px); }
+  12% {
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px); }
+  15% {
+    -webkit-transform: translateX(4px);
+    transform: translateX(4px); }
+  18% {
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px); }
+  21% {
+    -webkit-transform: translateX(-2px);
+    transform: translateX(-2px); }
+  24% {
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px); }
+  27% {
+    -webkit-transform: translateX(2px);
+    transform: translateX(2px); }
+  30% {
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px); }
+  100% {
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px); } }
 
 /***********************************************************
                            FOOTER

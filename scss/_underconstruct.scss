@@ -2,7 +2,7 @@
 @import "mixin";
 
 /***********************************************************
-                           HEADER
+                           BODY
 ***********************************************************/
 
 .construction {
@@ -117,76 +117,6 @@
                            MAIN  
 ***********************************************************/
 
-//固定レイアウトver
-// .main--construct {
-//     height: 90vh;
-//     width: 100%;
-//     background-image: url("/images/svg/pikuwave.svg");
-//     background-repeat: no-repeat;
-//     background-size: cover;
-//     background-position: center 50px;
-// }
-// .piyobox__title {
-//     text-align: center;
-//     color: lighten($sky, 20%);
-//     padding: 5vh 0 60px;
-//     font-size: 2rem;
-//     letter-spacing: 0.2rem;
-// }
-// .piyobox__button {
-//     display: block;
-//     box-sizing: border-box;
-//     width: 140px;
-//     padding: 10px 10px;
-//     margin: 50px auto;
-//     text-align: center;
-//     box-sizing: border-box;
-//     font-size: 1.2rem;
-//     letter-spacing: 0.2rem;
-//     background-color: white;
-//     color: $sky;
-//     opacity: 0.8;
-//     border-radius: 20px;
-//     &:before {
-//         display: inline;
-//         font-family: "pikufont";
-//         content: "\e90d";
-//         // vertical-align: top;
-//         padding: 0 5px;
-//     }
-//     &:hover {
-//         opacity: 0.4;
-//     }
-// }
-// .piyobox {
-//     box-sizing: border-box;
-//     padding-top: 40px;
-//     margin: auto;
-//     width: 380px;
-//     height: 380px;
-//     max-width: 500px;
-//     max-height: 500px;
-//     background-color: white;
-//     border-radius: 100%;
-//     border: 1px solid white;
-//     .piyobox__text {
-//         display: block;
-//         height: 50px;
-//         text-align: center;
-//         margin: 0 auto;
-//         color: $sky;
-//         font-size: 1.9rem;
-//         letter-spacing: 0.3rem;
-//     }
-//     .piyobox__img--cry {
-//         width: 250px;
-//         height: 250px;
-//         margin: auto;
-//         background-image: url("/images/svg/pikupiyo_sorry.svg");
-//         background-repeat: no-repeat;
-//         background-size: contain;
-//     }
-// }
 .main--construct {
     height: 90vh;
     width: 100%;
@@ -257,6 +187,53 @@
         background-image: url("/images/svg/pikupiyo_sorry.svg");
         background-repeat: no-repeat;
         background-size: contain;
+        //animationの定義
+        animation-name: piyobulu;
+        animation-duration: 3000ms; //アニメーション開始から終了までの所要時間
+        animation-timing-function: linear; //アニメーションのイージング
+        animation-delay: 0s; //アニメーションが開始するまでの遅延時間
+        animation-iteration-count: infinite; //アニメーションのループ回数
+        animation-direction: normal; //アニメーションの再生方向
+        // animation-play-state: running;
+    }
+}
+
+@keyframes piyobulu {
+    0% {
+        transform: translateX(0px);
+    }
+    3% {
+        transform: translateX(4px);
+    }
+    6% {
+        transform: translateX(0px);
+    }
+    9% {
+        transform: translateX(-4px);
+    }
+    12% {
+        transform: translateX(0px);
+    }
+    15% {
+        transform: translateX(4px);
+    }
+    18% {
+        transform: translateX(0px);
+    }
+    21% {
+        transform: translateX(-2px);
+    }
+    24% {
+        transform: translateX(0px);
+    }
+    27% {
+        transform: translateX(2px);
+    }
+    30% {
+        transform: translateX(0px);
+    }
+    100% {
+        transform: translateX(0px);
     }
 }
 
