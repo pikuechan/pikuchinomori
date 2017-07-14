@@ -36,7 +36,7 @@
                            HEADER
 ***********************************************************/
 .header--top {
-  height: 20vh;
+  height: 10vh;
   width: 100%; }
   .header--top nav {
     z-index: 100;
@@ -61,7 +61,7 @@
           color: white; }
           .header--top nav ol li a:hover {
             color: white;
-            background-color: #251d00;
+            background-color: #131e03;
             border-radius: 15px; }
     .header--top nav .navmenu {
       display: none; }
@@ -79,7 +79,7 @@
         display: none; }
       .header--top nav.nav-open {
         opacity: 0.9;
-        background-color: #251d00; }
+        background-color: #131e03; }
         .header--top nav.nav-open .navmenu_list {
           display: block;
           text-align: left;
@@ -96,11 +96,11 @@
             .header--top nav.nav-open .navmenu_list li:hover {
               color: #CFED47;
               border-radius: 0px;
-              background-color: #584600; }
+              background-color: #324b09; }
             .header--top nav.nav-open .navmenu_list li a {
               display: block; }
               .header--top nav.nav-open .navmenu_list li a:hover {
-                background-color: #584600; }
+                background-color: #324b09; }
     .header--top h1 {
       font-size: 2.5rem; } }
   @media (max-width: 480px) {
@@ -111,35 +111,72 @@
                            MAIN
 ***********************************************************/
 .main--top {
-  height: 40vh; }
+  z-index: 2;
+  position: relative;
+  height: 60vh; }
   .main--top .sitetitle {
+    z-index: 3;
+    position: relative;
     width: 100%;
     height: 100%;
-    margin-top: 0vh;
     background-position: center;
     background-image: url("/images/svg/pikuchinomori_logo2.svg");
     background-repeat: no-repeat; }
+
+.pikusky {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 60vh;
+  background-image: url("/images/svg/skycloud-sample.svg");
+  background-size: cover;
+  -webkit-animation-name: pikucloud;
+  animation-name: pikucloud;
+  -webkit-animation-duration: 60s;
+  animation-duration: 60s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: normal;
+  animation-direction: normal; }
+
+@-webkit-keyframes pikucloud {
+  0% {
+    background-position: 0 0; }
+  100% {
+    background-position: 2000px 0; } }
+
+@keyframes pikucloud {
+  0% {
+    background-position: 0 0; }
+  100% {
+    background-position: 2000px 0; } }
 
 /***********************************************************
                            FOOTER
 ***********************************************************/
 .footer--top {
   width: 100%;
-  height: 40vh;
-  background-color: #ffdd58;
+  height: 30vh;
+  background-color: #b9ed66;
   /* 上⇒下への白から黄色のグラデーション指定 */
-  background-image: -webkit-linear-gradient(85deg, #ffdd58 50%, #8aafe8 50%, #8aafe8);
-  background-image: -o-linear-gradient(85deg, #ffdd58 50%, #8aafe8 50%, #8aafe8);
-  background-image: linear-gradient(5deg, #ffdd58 50%, #8aafe8 50%, #8aafe8); }
+  background-image: -webkit-linear-gradient(87deg, #b9ed66 50%, #8aafe8 50%, #8aafe8);
+  background-image: -o-linear-gradient(87deg, #b9ed66 50%, #8aafe8 50%, #8aafe8);
+  background-image: linear-gradient(3deg, #b9ed66 50%, #8aafe8 50%, #8aafe8); }
   .footer--top .pikuforest {
+    z-index: 4;
     position: relative;
     width: 100%;
-    height: 40vh;
+    height: 30vh;
     max-width: 1280px;
     margin: auto; }
   .footer--top .piyo {
+    z-index: 5;
     position: absolute;
-    bottom: 15vh;
+    bottom: 12vh;
     right: 100px;
     width: 11vw;
     min-width: 120px;
@@ -164,15 +201,18 @@
     -webkit-transform: translateY(0px);
     transform: translateY(0px); }
   5% {
-    -webkit-transform: translateY(-10px);
-    transform: translateY(-10px); }
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px); }
   20% {
     -webkit-transform: translateY(0px);
     transform: translateY(0px); }
+  25% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px); }
   30% {
-    -webkit-transform: translateY(-20px);
-    transform: translateY(-20px); }
-  50% {
+    -webkit-transform: translateY(-25px);
+    transform: translateY(-25px); }
+  45% {
     -webkit-transform: translateY(0px);
     transform: translateY(0px); }
   100% {
@@ -184,23 +224,27 @@
     -webkit-transform: translateY(0px);
     transform: translateY(0px); }
   5% {
-    -webkit-transform: translateY(-10px);
-    transform: translateY(-10px); }
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px); }
   20% {
     -webkit-transform: translateY(0px);
     transform: translateY(0px); }
+  25% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px); }
   30% {
-    -webkit-transform: translateY(-20px);
-    transform: translateY(-20px); }
-  50% {
+    -webkit-transform: translateY(-25px);
+    transform: translateY(-25px); }
+  45% {
     -webkit-transform: translateY(0px);
     transform: translateY(0px); }
   100% {
     -webkit-transform: translateY(0px);
     transform: translateY(0px); } }
   .footer--top .trees {
+    z-index: 1;
     position: absolute;
-    bottom: 18vh;
+    bottom: 12vh;
     left: 50px;
     width: 35vw;
     min-width: 300px;
@@ -208,7 +252,7 @@
     height: auto;
     content: url("/images/svg/morinoki3.svg"); }
   .footer--top .copyright {
-    background-color: #ffdd58;
+    background-color: #b9ed66;
     width: 100%;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;

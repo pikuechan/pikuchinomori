@@ -15,7 +15,7 @@
 ***********************************************************/
 
 .header--top {
-    height: 20vh;
+    height: 10vh;
     width: 100%;
     // background-color: $sky;
     // background-image: linear-gradient(3deg, #fff 30%, $sky 30%, $sky);
@@ -118,16 +118,43 @@
 ***********************************************************/
 
 .main--top {
-    // background-color: $sky;
-    $titlemargin: 0vh;
-    height: 40vh - $titlemargin;
+    z-index: 2;
+    position: relative;
+    height: 60vh;
     .sitetitle {
+        z-index: 3;
+        position: relative;
         width: 100%;
         height: 100%;
-        margin-top: $titlemargin;
         background-position: center;
         background-image: url('/images/svg/pikuchinomori_logo2.svg');
         background-repeat: no-repeat;
+    }
+}
+
+.pikusky {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 60vh;
+    background-image: url("/images/svg/skycloud-sample.svg");
+    background-size: cover;
+    //animationの定義
+    animation-name: pikucloud;
+    animation-duration: 60s; //アニメーション開始から終了までの所要時間
+    animation-timing-function: linear; //アニメーションのイージング
+    animation-iteration-count: infinite; //アニメーションのループ回数
+    animation-direction: normal; //アニメーションの再生方向
+}
+
+@keyframes pikucloud {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 2000px 0;
     }
 }
 
@@ -138,20 +165,22 @@
 
 .footer--top {
     width: 100%;
-    height: 40vh;
+    height: 30vh;
     background-color: $forest;
     /* 上⇒下への白から黄色のグラデーション指定 */
-    background-image: linear-gradient(5deg, $forest 50%, $sky 50%, $sky);
+    background-image: linear-gradient(3deg, $forest 50%, $sky 50%, $sky);
     .pikuforest {
+        z-index: 4;
         position: relative;
         width: 100%;
-        height: 40vh;
+        height: 30vh;
         max-width: 1280px;
         margin: auto;
     }
     .piyo {
+        z-index: 5;
         position: absolute;
-        bottom: 15vh;
+        bottom: 12vh;
         right: 100px;
         width: 11vw;
         min-width: 120px;
@@ -172,15 +201,18 @@
             transform: translateY(0px);
         }
         5% {
-            transform: translateY(-10px);
+            transform: translateY(-15px);
         }
         20% {
             transform: translateY(0px);
         }
-        30% {
-            transform: translateY(-20px);
+        25% {
+            transform: translateY(0px);
         }
-        50% {
+        30% {
+            transform: translateY(-25px);
+        }
+        45% {
             transform: translateY(0px);
         }
         100% {
@@ -188,8 +220,9 @@
         }
     }
     .trees {
+        z-index: 1;
         position: absolute;
-        bottom: 18vh;
+        bottom: 12vh;
         left: 50px;
         width: 35vw;
         min-width: 300px;
