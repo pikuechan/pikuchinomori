@@ -5,27 +5,6 @@
 /***************************************************************
                           Color Settings
 ****************************************************************/
-/*宇宙背景ver. カラーリング*/
-/*地球背景ver. カラーリング*/
-/***************************************************************
-                          Size Settings
-****************************************************************/
-/***********************************************************
-                         MIXIN
-***********************************************************/
-/***********************************************************
-                       SECTION BASE AREA
-***********************************************************/
-/***********************************************************
-                       SECTION TITLE　
-***********************************************************/
-/***********************************************************
-                       SENTENCE STYLE　
-***********************************************************/
-/* xlarge */
-/* large */
-/* basic */
-/* small */
 /***********************************************************
                            BODY
 ***********************************************************/
@@ -35,74 +14,6 @@
 /***********************************************************
                            HEADER
 ***********************************************************/
-.header--top {
-  height: 10vh;
-  width: 100%;
-  background-color: #8aafe8; }
-  .header--top nav {
-    z-index: 100;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    padding: 8px 0;
-    background-color: #8aafe8;
-    opacity: 0.85;
-    vertical-align: center;
-    color: white;
-    font-size: 1.0rem; }
-    .header--top nav ol {
-      text-align: center; }
-      .header--top nav ol li {
-        display: inline-block; }
-        .header--top nav ol li a {
-          display: inline-block;
-          padding: 6px 30px;
-          color: white; }
-          .header--top nav ol li a:hover {
-            color: white;
-            background-color: #131e03;
-            border-radius: 15px; }
-    .header--top nav .navmenu {
-      display: none; }
-  @media (max-width: 960px) {
-    .header--top nav {
-      padding: 0;
-      height: auto; }
-      .header--top nav .navmenu {
-        display: block;
-        font-size: 2.5rem;
-        float: right;
-        padding: 2px 5px 0 0;
-        cursor: pointer; }
-      .header--top nav .navmenu_list {
-        display: none; }
-      .header--top nav.nav-open {
-        opacity: 0.9;
-        background-color: #131e03; }
-        .header--top nav.nav-open .navmenu_list {
-          display: block;
-          text-align: left;
-          padding: 15px 0; }
-          .header--top nav.nav-open .navmenu_list li {
-            display: block;
-            line-height: 2.5rem;
-            text-align: center;
-            margin: 0 10vw;
-            border-bottom: 2px solid;
-            border-color: rgba(255, 255, 255, 0.3); }
-            .header--top nav.nav-open .navmenu_list li:last-child {
-              border-bottom: none; }
-            .header--top nav.nav-open .navmenu_list li:hover {
-              color: #CFED47;
-              border-radius: 0px;
-              background-color: #324b09; }
-            .header--top nav.nav-open .navmenu_list li a {
-              display: block; }
-              .header--top nav.nav-open .navmenu_list li a:hover {
-                background-color: #324b09; } }
-
 /***********************************************************
                            MAIN
 ***********************************************************/

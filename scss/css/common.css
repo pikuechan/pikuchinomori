@@ -5,27 +5,6 @@
 /***************************************************************
                           Color Settings
 ****************************************************************/
-/*宇宙背景ver. カラーリング*/
-/*地球背景ver. カラーリング*/
-/***************************************************************
-                          Size Settings
-****************************************************************/
-/***********************************************************
-                         MIXIN
-***********************************************************/
-/***********************************************************
-                       SECTION BASE AREA
-***********************************************************/
-/***********************************************************
-                       SECTION TITLE　
-***********************************************************/
-/***********************************************************
-                       SENTENCE STYLE　
-***********************************************************/
-/* xlarge */
-/* large */
-/* basic */
-/* small */
 @import url("https://fonts.googleapis.com/css?family=Palanquin+Dark:400,600,700");
 @font-face {
   font-family: 'pikufont';
@@ -1032,11 +1011,6 @@
 /***************************************************************
                           Color Settings
 ****************************************************************/
-/*宇宙背景ver. カラーリング*/
-/*地球背景ver. カラーリング*/
-/***************************************************************
-                          Size Settings
-****************************************************************/
 /***********************************************************
                          MIXIN
 ***********************************************************/
@@ -1079,8 +1053,7 @@ body {
     font-weight: 600; }
 
 a {
-  text-decoration: none;
-  color: #C7D7F2; }
+  text-decoration: none; }
 
 ul li,
 ol li {
@@ -1102,47 +1075,14 @@ mark {
 u {
   text-decoration: none; }
 
-/***************************************************************
-                  pikuchi no mori Color Settings
-****************************************************************/
-/***************************************************************
-                          Color Settings
-****************************************************************/
-/*宇宙背景ver. カラーリング*/
-/*地球背景ver. カラーリング*/
-/***************************************************************
-                          Size Settings
-****************************************************************/
-/***********************************************************
-                         MIXIN
-***********************************************************/
-/***********************************************************
-                       SECTION BASE AREA
-***********************************************************/
-/***********************************************************
-                       SECTION TITLE　
-***********************************************************/
-/***********************************************************
-                       SENTENCE STYLE　
-***********************************************************/
-/* xlarge */
-/* large */
-/* basic */
-/* small */
-/***********************************************************
-                           BODY
-***********************************************************/
-.toppage {
-  background-color: #b9ed66; }
-
 /***********************************************************
                            HEADER
 ***********************************************************/
-.header--top {
+.globalnavi {
   height: 10vh;
   width: 100%;
   background-color: #8aafe8; }
-  .header--top nav {
+  .globalnavi nav {
     z-index: 100;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -1155,57 +1095,73 @@ u {
     vertical-align: center;
     color: white;
     font-size: 1.0rem; }
-    .header--top nav ol {
+    .globalnavi nav ol {
       text-align: center; }
-      .header--top nav ol li {
+      .globalnavi nav ol li {
         display: inline-block; }
-        .header--top nav ol li a {
+        .globalnavi nav ol li a {
           display: inline-block;
           padding: 6px 30px;
-          color: white; }
-          .header--top nav ol li a:hover {
+          color: white;
+          opacity: 1; }
+          .globalnavi nav ol li a:hover {
             color: white;
             background-color: #131e03;
             border-radius: 15px; }
-    .header--top nav .navmenu {
+    .globalnavi nav .navmenu {
       display: none; }
   @media (max-width: 960px) {
-    .header--top nav {
+    .globalnavi nav {
       padding: 0;
       height: auto; }
-      .header--top nav .navmenu {
+      .globalnavi nav .navmenu {
         display: block;
         font-size: 2.5rem;
         float: right;
         padding: 2px 5px 0 0;
         cursor: pointer; }
-      .header--top nav .navmenu_list {
+      .globalnavi nav .navmenu_list {
         display: none; }
-      .header--top nav.nav-open {
+      .globalnavi nav.nav-open {
         opacity: 0.9;
         background-color: #131e03; }
-        .header--top nav.nav-open .navmenu_list {
+        .globalnavi nav.nav-open .navmenu_list {
           display: block;
           text-align: left;
           padding: 15px 0; }
-          .header--top nav.nav-open .navmenu_list li {
+          .globalnavi nav.nav-open .navmenu_list li {
             display: block;
             line-height: 2.5rem;
             text-align: center;
             margin: 0 10vw;
             border-bottom: 2px solid;
             border-color: rgba(255, 255, 255, 0.3); }
-            .header--top nav.nav-open .navmenu_list li:last-child {
+            .globalnavi nav.nav-open .navmenu_list li:last-child {
               border-bottom: none; }
-            .header--top nav.nav-open .navmenu_list li:hover {
-              color: #CFED47;
+            .globalnavi nav.nav-open .navmenu_list li:hover {
+              color: white;
               border-radius: 0px;
               background-color: #324b09; }
-            .header--top nav.nav-open .navmenu_list li a {
+            .globalnavi nav.nav-open .navmenu_list li a {
               display: block; }
-              .header--top nav.nav-open .navmenu_list li a:hover {
+              .globalnavi nav.nav-open .navmenu_list li a:hover {
                 background-color: #324b09; } }
 
+/***************************************************************
+                  pikuchi no mori Color Settings
+****************************************************************/
+/***************************************************************
+                          Color Settings
+****************************************************************/
+/***********************************************************
+                           BODY
+***********************************************************/
+.toppage {
+  background-color: #b9ed66; }
+
+/***********************************************************
+                           HEADER
+***********************************************************/
 /***********************************************************
                            MAIN
 ***********************************************************/
@@ -1219,6 +1175,7 @@ u {
     position: relative;
     margin: auto;
     width: 30vw;
+    height: 100%;
     max-width: 400px;
     min-width: 350px;
     background-position: center;
@@ -1393,11 +1350,6 @@ u {
 /***************************************************************
                           Color Settings
 ****************************************************************/
-/*宇宙背景ver. カラーリング*/
-/*地球背景ver. カラーリング*/
-/***************************************************************
-                          Size Settings
-****************************************************************/
 /***********************************************************
                          MIXIN
 ***********************************************************/
@@ -1423,80 +1375,6 @@ u {
 /***********************************************************
                            HEADER
 ***********************************************************/
-.header--construct {
-  height: 10vh;
-  width: 100%;
-  background-color: #8aafe8; }
-  .header--construct nav {
-    z-index: 100;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    padding: 8px 0;
-    background-color: #8aafe8;
-    opacity: 0.85;
-    vertical-align: center;
-    color: white;
-    font-size: 1.0rem; }
-    .header--construct nav ol {
-      text-align: center; }
-      .header--construct nav ol li {
-        display: inline-block; }
-        .header--construct nav ol li a {
-          display: inline-block;
-          padding: 6px 30px;
-          color: white;
-          opacity: 1; }
-          .header--construct nav ol li a:hover {
-            color: white;
-            background-color: #131e03;
-            border-radius: 15px; }
-    .header--construct nav .navmenu {
-      display: none; }
-  @media (max-width: 960px) {
-    .header--construct nav {
-      padding: 0;
-      height: auto; }
-      .header--construct nav .navmenu {
-        display: block;
-        font-size: 2.5rem;
-        float: right;
-        padding: 2px 5px 0 0;
-        cursor: pointer; }
-      .header--construct nav .navmenu_list {
-        display: none; }
-      .header--construct nav.nav-open {
-        opacity: 0.9;
-        background-color: #131e03; }
-        .header--construct nav.nav-open .navmenu_list {
-          display: block;
-          text-align: left;
-          padding: 15px 0; }
-          .header--construct nav.nav-open .navmenu_list li {
-            display: block;
-            line-height: 2.5rem;
-            text-align: center;
-            margin: 0 10vw;
-            border-bottom: 2px solid;
-            border-color: rgba(255, 255, 255, 0.3); }
-            .header--construct nav.nav-open .navmenu_list li:last-child {
-              border-bottom: none; }
-            .header--construct nav.nav-open .navmenu_list li:hover {
-              color: #CFED47;
-              border-radius: 0px;
-              background-color: #324b09; }
-            .header--construct nav.nav-open .navmenu_list li a {
-              display: block; }
-              .header--construct nav.nav-open .navmenu_list li a:hover {
-                background-color: #324b09; }
-    .header--construct h1 {
-      font-size: 2.5rem; } }
-  @media (max-width: 480px) {
-    .header--construct h1 {
-      font-size: 2.0rem; } }
-
 /***********************************************************
                            MAIN  
 ***********************************************************/
