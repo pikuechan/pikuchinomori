@@ -139,11 +139,11 @@
     left: 0;
     width: 100vw;
     height: 60vh;
-    background-image: url("/images/svg/skycloud-sample.svg");
+    background-image: url("/images/svg/skycloud.svg");
     background-size: cover;
     //animationの定義
     animation-name: pikucloud;
-    animation-duration: 60s; //アニメーション開始から終了までの所要時間
+    animation-duration: 300s; //アニメーション開始から終了までの所要時間
     animation-timing-function: linear; //アニメーションのイージング
     animation-iteration-count: infinite; //アニメーションのループ回数
     animation-direction: normal; //アニメーションの再生方向
