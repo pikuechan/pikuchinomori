@@ -6,7 +6,7 @@
 ***********************************************************/
 
 .toppage {
-    background-color: $sky;
+    background-color: $forest;
 }
 
 
@@ -17,8 +17,7 @@
 .header--top {
     height: 10vh;
     width: 100%;
-    // background-color: $sky;
-    // background-image: linear-gradient(3deg, #fff 30%, $sky 30%, $sky);
+    background-color: $sky;
     nav {
         z-index: 100;
         box-sizing: border-box;
@@ -121,6 +120,7 @@
     z-index: 2;
     position: relative;
     height: 60vh;
+    background-color: $sky;
     .sitetitle {
         z-index: 3;
         position: relative;

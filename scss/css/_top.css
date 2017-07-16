@@ -30,14 +30,15 @@
                            BODY
 ***********************************************************/
 .toppage {
-  background-color: #8aafe8; }
+  background-color: #b9ed66; }
 
 /***********************************************************
                            HEADER
 ***********************************************************/
 .header--top {
   height: 10vh;
-  width: 100%; }
+  width: 100%;
+  background-color: #8aafe8; }
   .header--top nav {
     z-index: 100;
     -webkit-box-sizing: border-box;
@@ -113,7 +114,8 @@
 .main--top {
   z-index: 2;
   position: relative;
-  height: 60vh; }
+  height: 60vh;
+  background-color: #8aafe8; }
   .main--top .sitetitle {
     z-index: 3;
     position: relative;
