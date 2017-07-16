@@ -1133,14 +1133,15 @@ u {
                            BODY
 ***********************************************************/
 .toppage {
-  background-color: #8aafe8; }
+  background-color: #b9ed66; }
 
 /***********************************************************
                            HEADER
 ***********************************************************/
 .header--top {
   height: 10vh;
-  width: 100%; }
+  width: 100%;
+  background-color: #8aafe8; }
   .header--top nav {
     z-index: 100;
     -webkit-box-sizing: border-box;
@@ -1203,12 +1204,7 @@ u {
             .header--top nav.nav-open .navmenu_list li a {
               display: block; }
               .header--top nav.nav-open .navmenu_list li a:hover {
-                background-color: #324b09; }
-    .header--top h1 {
-      font-size: 2.5rem; } }
-  @media (max-width: 480px) {
-    .header--top h1 {
-      font-size: 2.0rem; } }
+                background-color: #324b09; } }
 
 /***********************************************************
                            MAIN
@@ -1216,29 +1212,37 @@ u {
 .main--top {
   z-index: 2;
   position: relative;
-  height: 60vh; }
+  height: 60vh;
+  background-color: #8aafe8; }
   .main--top .sitetitle {
     z-index: 3;
     position: relative;
-    width: 100%;
-    height: 100%;
+    margin: auto;
+    width: 30vw;
+    max-width: 400px;
+    min-width: 350px;
     background-position: center;
-    background-image: url("/images/svg/pikuchinomori_logo2.svg");
-    background-repeat: no-repeat; }
+    background-image: url("/images/svg/pikuchinomori_logo.svg");
+    background-repeat: no-repeat;
+    background-size: contain; }
+  @media (max-width: 700px) {
+    .main--top .sitetitle {
+      width: 50vw;
+      min-width: 300px; } }
 
 .pikusky {
   z-index: 1;
   position: absolute;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 100%;
   height: 60vh;
-  background-image: url("/images/svg/skycloud-sample.svg");
+  background-image: url("/images/svg/skycloud.svg");
   background-size: cover;
   -webkit-animation-name: pikucloud;
   animation-name: pikucloud;
-  -webkit-animation-duration: 60s;
-  animation-duration: 60s;
+  -webkit-animation-duration: 300s;
+  animation-duration: 300s;
   -webkit-animation-timing-function: linear;
   animation-timing-function: linear;
   -webkit-animation-iteration-count: infinite;
@@ -1350,10 +1354,10 @@ u {
     bottom: 12vh;
     left: 50px;
     width: 35vw;
-    min-width: 300px;
+    min-width: 350px;
     max-width: 450px;
     height: auto;
-    content: url("/images/svg/morinoki3.svg"); }
+    content: url("/images/svg/morinoki.svg"); }
   .footer--top .copyright {
     background-color: #b9ed66;
     width: 100%;
@@ -1365,14 +1369,22 @@ u {
     color: white;
     letter-spacing: 0.15rem;
     font-size: 1rem; }
-  @media (max-width: 960px) {
-    .footer--top .snsicons {
-      font-size: 2.6rem; } }
+  @media (max-width: 700px) {
+    .footer--top .trees {
+      bottom: 12vh;
+      left: 5vh;
+      width: 50vw;
+      min-width: 250px;
+      content: url("/images/svg/morinoki.svg"); }
+    .footer--top .piyo {
+      bottom: 12vh;
+      right: 10vw;
+      width: 18vw;
+      min-width: 80px;
+      height: auto; } }
   @media (max-width: 480px) {
-    .footer--top .snsicons {
-      font-size: 2.4rem; }
     .footer--top .copyright {
-      font-size: 0.6rem;
+      font-size: 0.8rem;
       padding: 25px 0; } }
 
 /***************************************************************
