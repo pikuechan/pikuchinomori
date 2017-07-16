@@ -99,16 +99,8 @@
                 }
             }
         }
-        h1 {
-            font-size: 2.5rem;
-        }
     }
-    //600px以下の場合の指定（モバイル）
-    @media (max-width: 480px) {
-        h1 {
-            font-size: 2.0rem;
-        }
-    }
+    @media (max-width: 480px) {}
 }
 
 
@@ -124,11 +116,21 @@
     .sitetitle {
         z-index: 3;
         position: relative;
-        width: 100%;
+        margin: auto;
+        width: 30vw;
         height: 100%;
+        max-width: 400px;
+        min-width: 350px;
         background-position: center;
         background-image: url('/images/svg/pikuchinomori_logo2.svg');
         background-repeat: no-repeat;
+        background-size: contain;
+    }
+    @media (max-width: 700px) {
+        .sitetitle {
+            width: 50vw;
+            min-width: 300px;
+        }
     }
 }
 
@@ -225,28 +227,11 @@
         bottom: 12vh;
         left: 50px;
         width: 35vw;
-        min-width: 300px;
+        min-width: 350px;
         max-width: 450px;
         height: auto;
-        content: url('/images/svg/morinoki3.svg');
+        content: url('/images/svg/morinoki.svg');
     }
-    // .snsicons {
-    //     background-color: $forest;
-    //     color: white;
-    //     font-size: 3rem;
-    //     padding-top: 20px;
-    //     text-align: center;
-    //     li {
-    //         display: inline-block;
-    //         padding: 0 5px;
-    //         a {
-    //             color: white;
-    //             &:hover {
-    //                 color: -green;
-    //             }
-    //         }
-    //     }
-    // }
     .copyright {
         background-color: $forest;
         width: 100%;
@@ -259,17 +244,25 @@
         font-size: 1rem;
     }
     //タブレット版
-    @media (max-width:960px) {
-        .snsicons {
-            font-size: 2.6rem;
+    @media (max-width:700px) {
+        .trees {
+            bottom: 12vh;
+            left: 5vh;
+            width: 50vw;
+            min-width: 250px;
+            content: url('/images/svg/morinoki.svg');
+        }
+        .piyo {
+            bottom: 12vh;
+            right: 10vw;
+            width: 18vw;
+            min-width: 80px;
+            height: auto;
         }
     }
     @media (max-width: 480px) {
-        .snsicons {
-            font-size: 2.4rem;
-        }
         .copyright {
-            font-size: 0.6rem;
+            font-size: 0.8rem;
             padding: 25px 0;
         }
     }
