@@ -128,7 +128,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 100%;
   height: 60vh;
   background-image: url("/images/svg/skycloud.svg");
   background-size: cover;
