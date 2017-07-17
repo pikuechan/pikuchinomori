@@ -189,12 +189,6 @@
       min-width: 80px;
       height: auto; } }
   @media (max-width: 480px) {
-    .footer--top .trees {
-      bottom: 12.5vh;
-      left: 3vh;
-      width: 50vw;
-      min-width: 230px;
-      content: url("/images/svg/morinoki.svg"); }
     .footer--top .copyright {
       font-size: 0.8rem;
       padding: 25px 0; } }
