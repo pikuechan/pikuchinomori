@@ -69,7 +69,7 @@ u {
                            HEADER
 ***********************************************************/
 
-.globalnavi {
+header {
     height: 10vh;
     width: 100%;
     background-color: $sky;
@@ -154,6 +154,27 @@ u {
                     }
                 }
             }
+        }
+    }
+}
+
+
+/***********************************************************
+                           HEADER
+***********************************************************/
+
+footer {
+    .copyright {
+        width: 100%;
+        padding: 20px 0;
+        text-align: center;
+        color: white;
+        letter-spacing: 0.15rem;
+        font-size: 0.9rem;
+    }
+    @media (max-width: 480px) {
+        .copyright {
+            font-size: 0.8rem;
         }
     }
 }

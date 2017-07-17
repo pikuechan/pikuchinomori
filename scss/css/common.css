@@ -1072,11 +1072,11 @@ u {
 /***********************************************************
                            HEADER
 ***********************************************************/
-.globalnavi {
+header {
   height: 10vh;
   width: 100%;
   background-color: #8aafe8; }
-  .globalnavi nav {
+  header nav {
     z-index: 100;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -1089,57 +1089,72 @@ u {
     vertical-align: center;
     color: white;
     font-size: 1.0rem; }
-    .globalnavi nav ol {
+    header nav ol {
       text-align: center; }
-      .globalnavi nav ol li {
+      header nav ol li {
         display: inline-block; }
-        .globalnavi nav ol li a {
+        header nav ol li a {
           display: inline-block;
           padding: 6px 30px;
           color: white;
           opacity: 1; }
-          .globalnavi nav ol li a:hover {
+          header nav ol li a:hover {
             color: white;
             background-color: #131e03;
             border-radius: 15px; }
-    .globalnavi nav .navmenu {
+    header nav .navmenu {
       display: none; }
   @media (max-width: 960px) {
-    .globalnavi nav {
+    header nav {
       padding: 0;
       height: auto; }
-      .globalnavi nav .navmenu {
+      header nav .navmenu {
         display: block;
         font-size: 2.5rem;
         float: right;
         padding: 2px 5px 0 0;
         cursor: pointer; }
-      .globalnavi nav .navmenu_list {
+      header nav .navmenu_list {
         display: none; }
-      .globalnavi nav.nav-open {
+      header nav.nav-open {
         opacity: 0.9;
         background-color: #131e03; }
-        .globalnavi nav.nav-open .navmenu_list {
+        header nav.nav-open .navmenu_list {
           display: block;
           text-align: left;
           padding: 15px 0; }
-          .globalnavi nav.nav-open .navmenu_list li {
+          header nav.nav-open .navmenu_list li {
             display: block;
             line-height: 2.5rem;
             text-align: center;
             margin: 0 10vw;
             border-bottom: 2px solid;
             border-color: rgba(255, 255, 255, 0.3); }
-            .globalnavi nav.nav-open .navmenu_list li:last-child {
+            header nav.nav-open .navmenu_list li:last-child {
               border-bottom: none; }
-            .globalnavi nav.nav-open .navmenu_list li:hover {
+            header nav.nav-open .navmenu_list li:hover {
               color: white;
               border-radius: 0px;
               background-color: #324b09; }
-            .globalnavi nav.nav-open .navmenu_list li a {
+            header nav.nav-open .navmenu_list li a {
               display: block; }
-              .globalnavi nav.nav-open .navmenu_list li a:hover {
+              header nav.nav-open .navmenu_list li a:hover {
                 background-color: #324b09; } }
+
+/***********************************************************
+                           HEADER
+***********************************************************/
+footer .copyright {
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+  color: white;
+  letter-spacing: 0.15rem;
+  font-size: 0.9rem; }
+
+@media (max-width: 480px) {
+  footer .copyright {
+    font-size: 0.8rem; } }
 
 /***************************************************************
                   pikuchi no mori Color Settings
@@ -1366,67 +1381,45 @@ u {
 /***********************************************************
                            MAIN  
 ***********************************************************/
-.main--construct {
-  height: 90vh;
-  width: 100%;
-  background-image: url("/images/svg/pikuwave.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center; }
-
-.piyobox__title {
-  text-align: center;
-  color: #dfe9f9;
-  padding: 5vh 0 60px;
-  font-size: 2rem;
-  letter-spacing: 0.2rem; }
-
-.piyobox__button {
-  display: block;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 140px;
-  padding: 10px 10px;
-  margin: 50px auto;
-  text-align: center;
-  box-sizing: border-box;
-  font-size: 1.2rem;
-  letter-spacing: 0.2rem;
-  background-color: white;
-  color: #8aafe8;
-  opacity: 0.8;
-  border-radius: 20px; }
-  .piyobox__button:before {
-    display: inline;
-    font-family: "pikufont";
-    content: "\e90d";
-    padding: 0 5px; }
-  .piyobox__button:hover {
-    opacity: 0.4; }
-
 .piyobox {
+  height: 90vh;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  padding-top: 6vh;
-  margin: auto;
-  width: 50vh;
-  height: 50vh;
-  max-width: 500px;
-  max-height: 500px;
-  background-color: white;
-  border-radius: 100%;
-  border: 1px solid white; }
-  .piyobox .piyobox__text {
+  padding-bottom: 100px; }
+  .piyobox__title {
+    text-align: center;
+    color: #dfe9f9;
+    padding: 50px 0 60px 0;
+    font-size: 2rem;
+    letter-spacing: 0.2rem; }
+  .piyobox__background {
+    height: 380px;
+    width: 100%;
+    background-image: url("/images/svg/pikuwave.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; }
+  .piyobox__circle {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-top: 40px;
+    margin: auto;
+    width: 380px;
+    height: 380px;
+    background-color: white;
+    border-radius: 100%;
+    border: 1px solid white; }
+  .piyobox__comment {
     display: block;
-    height: 5vh;
     text-align: center;
     margin: 0 auto;
+    padding: 0 0 10px 0;
     color: #8aafe8;
-    font-size: 4vh;
+    font-size: 2rem;
     letter-spacing: 0.3rem; }
-  .piyobox .piyobox__img--cry {
-    width: 35vh;
-    height: 35vh;
+  .piyobox__img--cry {
+    width: 270px;
+    height: 270px;
     margin: auto;
     background-image: url("/images/svg/pikupiyo_sorry.svg");
     background-repeat: no-repeat;
@@ -1443,6 +1436,28 @@ u {
     animation-iteration-count: infinite;
     -webkit-animation-direction: normal;
     animation-direction: normal; }
+  .piyobox__button {
+    display: block;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 140px;
+    padding: 10px 10px;
+    margin: 50px auto;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 1.2rem;
+    letter-spacing: 0.2rem;
+    background-color: white;
+    color: #8aafe8;
+    opacity: 0.8;
+    border-radius: 20px; }
+    .piyobox__button:before {
+      display: inline;
+      font-family: "pikufont";
+      content: "\e90d";
+      padding: 0 5px; }
+    .piyobox__button:hover {
+      opacity: 0.4; }
 
 @-webkit-keyframes piyobulu {
   0% {
@@ -1520,10 +1535,51 @@ u {
     -webkit-transform: translateX(0px);
     transform: translateX(0px); } }
 
+@media (max-width: 960px) {
+  .piyobox__title {
+    padding: 30px 0 50px 0;
+    font-size: 1.9rem;
+    letter-spacing: 0.2rem; }
+  .piyobox__background {
+    height: 320px; }
+  .piyobox__circle {
+    padding-top: 35px;
+    width: 320px;
+    height: 320px; }
+  .piyobox__comment {
+    padding: 0 0 10px 0;
+    font-size: 1.7rem;
+    letter-spacing: 0.3rem; }
+  .piyobox__img--cry {
+    width: 230px;
+    height: 230px; }
+  .piyobox__button {
+    margin: 40px auto;
+    font-size: 1.2rem;
+    letter-spacing: 0.2rem;
+    border-radius: 20px; } }
+
+@media (max-width: 480px) {
+  .piyobox__title {
+    padding: 30px 0 50px 0;
+    font-size: 1.6rem; }
+  .piyobox__background {
+    height: 280px; }
+  .piyobox__circle {
+    padding-top: 30px;
+    width: 280px;
+    height: 280px; }
+  .piyobox__comment {
+    padding: 0 0 10px 0;
+    font-size: 1.4rem;
+    letter-spacing: 0.3rem; }
+  .piyobox__img--cry {
+    width: 200px;
+    height: 200px; } }
+
 /***********************************************************
                            FOOTER
 ***********************************************************/
 .footer--construct {
-  width: 100%;
-  height: 0vh;
+  color: white;
   background-color: #8aafe8; }

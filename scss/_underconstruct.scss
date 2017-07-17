@@ -19,72 +19,47 @@
                            MAIN  
 ***********************************************************/
 
-.main--construct {
-    height: 90vh;
-    width: 100%;
-    background-image: url("/images/svg/pikuwave.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-}
-
-.piyobox__title {
-    text-align: center;
-    color: lighten($sky, 20%);
-    padding: 5vh 0 60px;
-    font-size: 2rem;
-    letter-spacing: 0.2rem;
-}
-
-.piyobox__button {
-    display: block;
-    box-sizing: border-box;
-    width: 140px;
-    padding: 10px 10px;
-    margin: 50px auto;
-    text-align: center;
-    box-sizing: border-box;
-    font-size: 1.2rem;
-    letter-spacing: 0.2rem;
-    background-color: white;
-    color: $sky;
-    opacity: 0.8;
-    border-radius: 20px;
-    &:before {
-        display: inline;
-        font-family: "pikufont";
-        content: "\e90d";
-        // vertical-align: top;
-        padding: 0 5px;
-    }
-    &:hover {
-        opacity: 0.4;
-    }
-}
-
 .piyobox {
+    height: 90vh;
     box-sizing: border-box;
-    padding-top: 6vh;
-    margin: auto;
-    width: 50vh;
-    height: 50vh;
-    max-width: 500px;
-    max-height: 500px;
-    background-color: white;
-    border-radius: 100%;
-    border: 1px solid white;
-    .piyobox__text {
+    padding-bottom: 100px;
+    &__title {
+        text-align: center;
+        color: lighten($sky, 20%);
+        padding: 50px 0 60px 0;
+        font-size: 2rem;
+        letter-spacing: 0.2rem;
+    }
+    &__background {
+        height: 380px;
+        width: 100%;
+        background-image: url("/images/svg/pikuwave.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    &__circle {
+        box-sizing: border-box;
+        padding-top: 40px;
+        margin: auto;
+        width: 380px;
+        height: 380px;
+        background-color: white;
+        border-radius: 100%;
+        border: 1px solid white;
+    }
+    &__comment {
         display: block;
-        height: 5vh;
         text-align: center;
         margin: 0 auto;
+        padding: 0 0 10px 0;
         color: $sky;
-        font-size: 4vh;
+        font-size: 2rem;
         letter-spacing: 0.3rem;
     }
-    .piyobox__img--cry {
-        width: 35vh;
-        height: 35vh;
+    &__img--cry {
+        width: 270px;
+        height: 270px;
         margin: auto;
         background-image: url("/images/svg/pikupiyo_sorry.svg");
         background-repeat: no-repeat;
@@ -96,7 +71,31 @@
         animation-delay: 0s; //アニメーションが開始するまでの遅延時間
         animation-iteration-count: infinite; //アニメーションのループ回数
         animation-direction: normal; //アニメーションの再生方向
-        // animation-play-state: running;
+    }
+    &__button {
+        display: block;
+        box-sizing: border-box;
+        width: 140px;
+        padding: 10px 10px;
+        margin: 50px auto;
+        text-align: center;
+        box-sizing: border-box;
+        font-size: 1.2rem;
+        letter-spacing: 0.2rem;
+        background-color: white;
+        color: $sky;
+        opacity: 0.8;
+        border-radius: 20px;
+        &:before {
+            display: inline;
+            font-family: "pikufont";
+            content: "\e90d";
+            // vertical-align: top;
+            padding: 0 5px;
+        }
+        &:hover {
+            opacity: 0.4;
+        }
     }
 }
 
@@ -139,13 +138,79 @@
     }
 }
 
+@media (max-width:960px) {
+    .piyobox {
+        &__title {
+            padding: 30px 0 50px 0;
+            font-size: 1.9rem;
+            letter-spacing: 0.2rem;
+        }
+        &__background {
+            height: 320px;
+        }
+        &__circle {
+            padding-top: 35px;
+            width: 320px;
+            height: 320px;
+        }
+        &__comment {
+            padding: 0 0 10px 0;
+            font-size: 1.7rem;
+            letter-spacing: 0.3rem;
+        }
+        &__img--cry {
+            width: 230px;
+            height: 230px;
+        }
+        &__button {
+            // width: 140px;
+            // padding: 10px 10px;
+            margin: 40px auto;
+            font-size: 1.2rem;
+            letter-spacing: 0.2rem;
+            border-radius: 20px;
+            // &:before {
+            //     display: inline;
+            //     font-family: "pikufont";
+            //     content: "\e90d";
+            //     padding: 0 5px;
+            // }
+        }
+    }
+}
+
+@media (max-width:480px) {
+    .piyobox {
+        &__title {
+            padding: 30px 0 50px 0;
+            font-size: 1.6rem;
+        }
+        &__background {
+            height: 280px;
+        }
+        &__circle {
+            padding-top: 30px;
+            width: 280px;
+            height: 280px;
+        }
+        &__comment {
+            padding: 0 0 10px 0;
+            font-size: 1.4rem;
+            letter-spacing: 0.3rem;
+        }
+        &__img--cry {
+            width: 200px;
+            height: 200px;
+        }
+    }
+}
+
 
 /***********************************************************
                            FOOTER
 ***********************************************************/
 
 .footer--construct {
-    width: 100%;
-    height: 0vh;
+    color: white;
     background-color: $sky;
 }
